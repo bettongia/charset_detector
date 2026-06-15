@@ -4,8 +4,10 @@ description: >-
   Detects character encodings (UTF-8, UTF-16, UTF-32, Shift-JIS, EUC-JP, EUC-KR,
   GBK, Windows-1252, and ISO-8859 variants) with no Flutter or native
   dependencies — works on web, mobile, and desktop.
-version: 0.1.0-dev.1
+version: 0.1.0-dev.2
 repository: https://github.com/bettongia/betto_charset_detector
+issue_tracker: https://github.com/bettongia/charset_detector/issues
+homepage: https://bettongia.github.io/charset_detector/
 
 topics:
   - charset
