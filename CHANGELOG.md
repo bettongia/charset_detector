@@ -1,5 +1,7 @@
 ## 0.1.0-dev.2
 
+Minor fixes for pub.dev publishing.
+
 ## 0.1.0-dev.1
 
 Initial development release of `betto_charset_detector`.
