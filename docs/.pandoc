@@ -1,0 +1,12 @@
+toc: true
+file-scope: true
+standalone: true
+list-of-tables: true
+list-of-figures: true
+number-sections: true
+include-before-body: site/_header.html
+include-after-body: docs/template/footer.html
+syntax-highlighting: default
+embed-resources: true
+css:
+  - docs/template/bettongia-docs.css
