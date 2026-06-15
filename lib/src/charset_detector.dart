@@ -114,15 +114,27 @@ final List<Encoding> _cjkCandidates = [shiftJis, eucJp, eucKr, gbk];
 /// non-UTF codec regardless of its actual encoding. This is a known
 /// limitation of the structural validity approach.
 ///
-/// Example:
+/// Example (web-safe — works on all platforms):
 /// ```dart
-/// import 'dart:io';
 /// import 'dart:typed_data';
 /// import 'package:betto_charset_detector/betto_charset_detector.dart';
 ///
 /// void main() {
+///   // Bytes may come from an HTTP response, file picker, dart:io, etc.
+///   final bytes = Uint8List.fromList([0xEF, 0xBB, 0xBF, 104, 101, 108, 108, 111]);
+///   final encoding = detectCharset(bytes);
+///   print('Detected encoding: $encoding'); // utf-8
+/// }
+/// ```
+///
+/// On native platforms only, you can read bytes from a file:
+/// ```dart
+/// import 'dart:io';
+/// import 'package:betto_charset_detector/betto_charset_detector.dart';
+///
+/// void main() {
 ///   final bytes = File('data.csv').readAsBytesSync();
-///   final encoding = detectCharset(Uint8List.fromList(bytes));
+///   final encoding = detectCharset(bytes);
 ///   print('Detected encoding: $encoding');
 /// }
 /// ```

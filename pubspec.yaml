@@ -1,11 +1,14 @@
 name: betto_charset_detector
 description: >-
   A pure-Dart charset detection library for Dart and Flutter applications.
-  Detects character encodings (UTF-8, UTF-16, UTF-32, Shift-JIS, EUC-JP,
-  EUC-KR, GBK, Windows-1252, and ISO-8859 variants) with no Flutter or native
+  Detects character encodings (UTF-8, UTF-16, UTF-32, Shift-JIS, EUC-JP, EUC-KR,
+  GBK, Windows-1252, and ISO-8859 variants) with no Flutter or native
   dependencies — works on web, mobile, and desktop.
 version: 0.1.0-dev.1
 repository: https://github.com/bettongia/betto_charset_detector
+
+topics:
+  - charset
 
 environment:
   sdk: ^3.12.0
