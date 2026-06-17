@@ -7,6 +7,6 @@ number-sections: true
 include-before-body: site/_header.html
 include-after-body: docs/template/footer.html
 syntax-highlighting: default
-embed-resources: true
+embed-resources: false
 css:
-  - docs/template/bettongia-docs.css
+  - bettongia-docs.css
